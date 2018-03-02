@@ -1,5 +1,5 @@
 
-# Wireless Seonsor Networks, Spring 2018
+# Wireless Sensor Networks, Spring 2018
 
 ## Christopher Hung (christoh), Rini Patel (rinip), and Tushar Goyal (tgoyal1)
 
