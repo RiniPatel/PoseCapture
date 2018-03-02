@@ -1,5 +1,5 @@
 
-# Christoper Hung (christoh), Rini Patel (rinip), and Tushar Goyal (tgoyal1)
+# Christopher Hung (christoh), Rini Patel (rinip), and Tushar Goyal (tgoyal1)
 
 <div style="text-align: center;"><a class="nav"  href="https://rinipatel.github.io/PoseCapture/proposal" target="_blank">Proposal</a></div>
 
