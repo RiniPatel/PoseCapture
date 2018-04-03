@@ -208,7 +208,7 @@
 // Select your hardware here by uncommenting one line!
 //#define HW__VERSION_CODE 10125 // SparkFun "9DOF Razor IMU" version "SEN-10125" (HMC5843 magnetometer)
 //#define HW__VERSION_CODE 10736 // SparkFun "9DOF Razor IMU" version "SEN-10736" (HMC5883L magnetometer)
-//#define HW__VERSION_CODE 14001 // SparkFun "9DoF Razor IMU M0" version "SEN-14001"
+#define HW__VERSION_CODE 14001 // SparkFun "9DoF Razor IMU M0" version "SEN-14001"
 //#define HW__VERSION_CODE 10183 // SparkFun "9DOF Sensor Stick" version "SEN-10183" (HMC5843 magnetometer)
 //#define HW__VERSION_CODE 10321 // SparkFun "9DOF Sensor Stick" version "SEN-10321" (HMC5843 magnetometer)
 //#define HW__VERSION_CODE 10724 // SparkFun "9DOF Sensor Stick" version "SEN-10724" (HMC5883L magnetometer)
@@ -279,6 +279,13 @@ float ACCEL_Y_MAX = 250;
 float ACCEL_Z_MIN = -250;
 float ACCEL_Z_MAX = 250;
 
+//float ACCEL_X_MIN = -260.01;
+//float ACCEL_X_MAX = 264.04;
+//float ACCEL_Y_MIN = -262.21;
+//float ACCEL_Y_MAX = 280.64;
+//float ACCEL_Z_MIN = 211.18; 
+//float ACCEL_Z_MAX = 282.71;
+
 // Magnetometer (standard calibration mode)
 // "magn x,y,z (min/max) = X_MIN/X_MAX  Y_MIN/Y_MAX  Z_MIN/Z_MAX"
 float MAGN_X_MIN = -600;
@@ -290,13 +297,13 @@ float MAGN_Z_MAX = 600;
 
 // Magnetometer (extended calibration mode)
 // Set to true to use extended magnetometer calibration (compensates hard & soft iron errors)
-boolean CALIBRATION__MAGN_USE_EXTENDED = false;
-float magn_ellipsoid_center[3] = {0, 0, 0};
-float magn_ellipsoid_transform[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};
+boolean CALIBRATION__MAGN_USE_EXTENDED = true;
+float magn_ellipsoid_center[3] = {244.321, 182.108, 109.341};
+float magn_ellipsoid_transform[3][3] = {{0.972817, -0.0252571, -0.00183925}, {-0.0252571, 0.976415, -0.00297553}, {-0.00183925, -0.00297553, 0.986204}};
 
 // Gyroscope
 // "gyro x,y,z (current/average) = .../OFFSET_X  .../OFFSET_Y  .../OFFSET_Z
-float GYRO_AVERAGE_OFFSET_X = 0.0;
+float GYRO_AVERAGE_OFFSET_X = -0.04;
 float GYRO_AVERAGE_OFFSET_Y = 0.0;
 float GYRO_AVERAGE_OFFSET_Z = 0.0;
 
