@@ -20,7 +20,7 @@ Key hardware components for our project:
 - Arduino Uno boards + WiFi shields
 - IMU Sensors
 
-![Block Diagram](Pose_Capture.png)
+![Block Diagram]({{ site.url }}/assets/Pose_Capture.png)
 
 
 ## References
