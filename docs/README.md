@@ -1,10 +1,4 @@
 
-# 18-748 Wireless Sensor Networks, Spring 2018
-
-### Christopher Hung (christoh), Rini Patel (rinip), and Tushar Goyal (tgoyal1)
-
-<div style="text-align: center;"><a class="nav"  href="https://rinipatel.github.io/PoseCapture/Project_Scope_Document.pdf" target="_blank">Project Scope</a></div>
-
 ## Introduction
 For our project, we plan to implement a system that will track a user’s movements as they move their limbs. This system will use a network of nodes each with an IMU that will collect the data and relay it back to a master on a PC, which will collect the data and track the motion of each individual node.
 
