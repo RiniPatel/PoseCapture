@@ -1,11 +1,12 @@
+### Christopher Hung (christoh), Rini Patel (rinip), and Tushar Goyal (tgoyal1)
 
 ## Introduction
-For our project, we plan to implement a system that will track a user’s movements as they move their limbs. This system will use a network of nodes each with an IMU that will collect the data and relay it back to a master on a PC, which will collect the data and track the motion of each individual node.
+We implemented a wireless system that captures a person’s movements as they move their limbs. The system uses a network of nodes each with an IMU which relay the orientation measurements for the respective limbs to a master on a PC, which processes the data and represents the estimated pose in form of graphical 3D model.
 
 ![Stick Figures](http://vis.uky.edu/~gravity/Research/Mocap/Mocap_files/image002.jpg)
 
 ## Motivation 
-The motivation behind this project is the cases when we require mobility, flexibility and line of sight requirement is not necessary. We want to take a wireless approach with inertial measurement sensors where the sensors could be attached to the body and the receiver software running on the host would use the inertial data to estimate the pose of the subject.
+The motivation behind this project is the cases when we require mobility, flexibility and line of sight requirement is not necessary. We took a wireless approach with inertial measurement sensors (IMUs), where the sensors could be attached to the body and the receiver software running on the host would use the inertial data to estimate the pose of the subject.
 
 ## Key Use Cases
 - Computer Animation
