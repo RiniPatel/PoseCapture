@@ -3,9 +3,8 @@
 ## Introduction
 We implemented a wireless system that captures a person’s movements as they move their limbs. The system uses a network of nodes each with an IMU which relay the orientation measurements for the respective limbs to a master on a PC, which processes the data and represents the estimated pose in form of graphical 3D model.
 
-<p align="center"> 
-<img src="http://vis.uky.edu/~gravity/Research/Mocap/Mocap_files/image002.jpg" width="375" height="125">
-</p>
+
+<img src="http://vis.uky.edu/~gravity/Research/Mocap/Mocap_files/image002.jpg" width="450" height="150">
 
 ## Motivation
 Following are the popular approaches to do pose capture:
@@ -23,13 +22,8 @@ The main goal of the project is to get a full body capture of the person using
 
 ## Key Use Cases
 The most definitive use of our project is in computer animation. Rather than manually moving the limbs of a character, the animator can build a model of the character, act out the desired motion physically, and apply the recorded motions directly to the limbs of the model. This animation could be used in film making, game development etc.
-<p align="center"> 
-<img src=assets/usecases.png>
-</p>
 
-<p align="center"> 
 <img src=assets/usecases.png>
-</p>
 
 
 ## System Design 
@@ -39,33 +33,36 @@ Key hardware components for our project:
 - WiFi shields (ESP8266 WiFi modules)
 
 
-<p align="center"> 
-<img src=assets/Pose_Capture.png width="460" height="300">
-</p>
 
-<p align="center"> 
+<img src=assets/Pose_Capture.png width="460" height="300">
+
+
 <img src=assets/hardware.png>
-</p>
 
 ## Body Model
 We are using a hip rooted body model where all the movements of bones are rooted on a tree as shown in Figure 3. This defines the relative position of bones and helps in modelling body motion and movements correctly. For example, upper arm  is parent of lower arm thus a movement in upper arm would cause motion in lower arm as well. The same model is being used by Blender and Unity.
-<p align="center"> 
-<img src=assets/body_model.png>
-</p>
 
-<p align="center"> 
+<img src=assets/body_model.png>
+
+
 <img src=assets/body_model1.png>
-</p>
+
+## Blender and Unity 3D example
+The Blender visualization is powered by a series of controllers called once every program tick. One controller reads all the WiFi packets in the buffer and stores the latest one from each of the nodes. Another controller updates the position of the model using the 3 yaw, pitch, and roll angles.
+
+<img src=assets/model_blender.png>
+
+Controllers are written in Visual Studio C#. One software thread running in background to continuously reads from WiFi UDP port of host PC, and event-driven controllers for each sensor node update the graphical movement of associated limb on screen at the rate of 10fps.
+
+
 
 ## Project Status
-<p align="center"> 
+
 <img src=assets/project_status.png>
-</p>
 
 ## Conclusion
-<p align="center"> 
+
 <img src=assets/conclusion.png>
-</p>
 
 ## References
 
