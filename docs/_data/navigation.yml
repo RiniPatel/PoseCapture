@@ -1,0 +1,10 @@
+# Belongs at: /_data/navigation.yml
+
+- title: Final Report
+  url: final
+
+- title: Project Proposal
+  url: proposal
+
+- title: Demo
+  url: demo
