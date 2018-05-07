@@ -60,14 +60,10 @@ We are using a hip rooted body model where all the movements of bones are rooted
 ## Blender and Unity 3D example
 The Blender visualization is powered by a series of controllers called once every program tick. One controller reads all the WiFi packets in the buffer and stores the latest one from each of the nodes. Another controller updates the position of the model using the 3 yaw, pitch, and roll angles.
 
-<p align="center">
-<img src="assets/model_blender.png">
-</p>
-
 Controllers are written in Visual Studio C#. One software thread running in background to continuously reads from WiFi UDP port of host PC, and event-driven controllers for each sensor node update the graphical movement of associated limb on screen at the rate of 10fps.
 
 <p align="center">
-<img src="assets/model_unity.png">
+<img src="assets/model_3d.png">
 </p>
 
 ## Project Status
