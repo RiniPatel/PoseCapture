@@ -13,10 +13,10 @@ void output_angles()
   }
   else if (output_format == OUTPUT__FORMAT_TEXT)
   {
-    LOG_PORT.print("#YPR=");
+    LOG_PORT.print("0=");
     LOG_PORT.print(TO_DEG(yaw)); LOG_PORT.print(",");
     LOG_PORT.print(TO_DEG(pitch)); LOG_PORT.print(",");
-    LOG_PORT.print(TO_DEG(roll)); LOG_PORT.println();
+    LOG_PORT.print(TO_DEG(roll)); LOG_PORT.print("!");
   }
 }
 
