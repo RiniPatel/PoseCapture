@@ -21,9 +21,7 @@ The main goal of the project is to get a full body capture of the person using
 3. use the orientation data from IMUS to post process in the form of 3D body model.
 
 ## Key Use Cases
-The most definitive use of our project is in computer animation. Rather than manually moving the limbs of a character, the animator can build a model of the character, act out the desired motion physically, and apply the recorded motions directly to the limbs of the model. This animation could be used in film making, game development etc.
-
-<img src=assets/usecases.png>
+The most definitive use of our project is in computer animation. Rather than manually moving the limbs of a character, the animator can build a model of the character, act out the desired motion physically, and apply the recorded motions directly to the limbs of the model. This animation could be used in film making, game development etc.<img src=assets/usecases.png>
 
 
 ## System Design 
@@ -31,25 +29,16 @@ Key hardware components for our project:
 - IMU Sensors (SparkFun 9DoF Razor IMU M0)
 - Batteries for IMUs (Li Ion Batteries (3.7V 400mAh))
 - WiFi shields (ESP8266 WiFi modules)
-
-
-
 <img src=assets/Pose_Capture.png width="460" height="300">
-
-
 <img src=assets/hardware.png>
 
 ## Body Model
 We are using a hip rooted body model where all the movements of bones are rooted on a tree as shown in Figure 3. This defines the relative position of bones and helps in modelling body motion and movements correctly. For example, upper arm  is parent of lower arm thus a movement in upper arm would cause motion in lower arm as well. The same model is being used by Blender and Unity.
-
 <img src=assets/body_model.png>
-
-
 <img src=assets/body_model1.png>
 
 ## Blender and Unity 3D example
 The Blender visualization is powered by a series of controllers called once every program tick. One controller reads all the WiFi packets in the buffer and stores the latest one from each of the nodes. Another controller updates the position of the model using the 3 yaw, pitch, and roll angles.
-
 <img src=assets/model_blender.png>
 
 Controllers are written in Visual Studio C#. One software thread running in background to continuously reads from WiFi UDP port of host PC, and event-driven controllers for each sensor node update the graphical movement of associated limb on screen at the rate of 10fps.
@@ -57,11 +46,9 @@ Controllers are written in Visual Studio C#. One software thread running in back
 
 
 ## Project Status
-
 <img src=assets/project_status.png>
 
 ## Conclusion
-
 <img src=assets/conclusion.png>
 
 ## References
