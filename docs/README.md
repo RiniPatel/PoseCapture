@@ -87,7 +87,7 @@ Controllers are written in Visual Studio C#. One software thread running in back
 ### <a name="status">Project Status</a>
 
 <p align="center">
-<img src="assets/project_status.png" width="650" height="280">
+<img src="assets/project_status.png" width="680" height="280">
 </p>
 
 ### <a name="conclusion">Conclusion</a>
