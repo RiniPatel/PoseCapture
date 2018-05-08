@@ -21,7 +21,7 @@ We implemented a wireless system that captures a person’s movements as they mo
 
 
 <p align="center">
-<img src="http://vis.uky.edu/~gravity/Research/Mocap/Mocap_files/image002.jpg" width="450" height="150">
+<img src="http://vis.uky.edu/~gravity/Research/Mocap/Mocap_files/image002.jpg">
 </p>
 
 #### <a name="motivation">Motivation</a>
@@ -44,7 +44,7 @@ The main goal of the project is to get a full body capture of the person using
 
 The most definitive use of our project is in computer animation. Rather than manually moving the limbs of a character, the animator can build a model of the character, act out the desired motion physically, and apply the recorded motions directly to the limbs of the model. This animation could be used in film making, game development etc.
 <p align="center">
-<img src="assets/usecases.png">
+<img src="assets/usecases.png" width="300" height="300">
 </p>
 
 
