@@ -33,12 +33,14 @@ Following are the popular approaches to do pose capture:
 
 The motivation behind this project is the cases when we require mobility, flexibility and line of sight requirement is not necessary. We took a wireless approach with inertial measurement sensors (IMUs), where the sensors could be attached to the body and the receiver software running on the host would use the inertial data to estimate the pose of the subject.
 
+
 #### <a name="goals">Project Goals</a>
 
 The main goal of the project is to get a full body capture of the person using 
 1. A wireless sensor network
 2. Which is robust under variety of environmental conditions, and 
 3. Use the orientation data from IMUS to post process in the form of 3D body model.
+
 
 ### <a name="uses">Key Use Cases</a>
 
@@ -66,6 +68,7 @@ Key hardware components for our project:
 <img src="assets/hardware.png" width="465" height="200">
 </p>
 
+
 #### <a name="model">Body Model</a>
 
 We are using a hip rooted body model where all the movements of bones are rooted on a tree as shown in Figure 3. This defines the relative position of bones and helps in modelling body motion and movements correctly. For example, upper arm  is parent of lower arm thus a movement in upper arm would cause motion in lower arm as well. The same model is being used by Blender and Unity.
@@ -73,6 +76,7 @@ We are using a hip rooted body model where all the movements of bones are rooted
 <p align="center">
 <img src="assets/body_model.png"  width="425"> <img src="assets/body_model1.png" width="425">
 </p>
+
 
 #### <a name="example">Blender and Unity 3D Animation</a>
 
@@ -84,17 +88,20 @@ Controllers are written in Visual Studio C#. One software thread running in back
 <img src="assets/model_3d.png" width="600" height="300">
 </p>
 
+
 ### <a name="status">Project Status</a>
 
 <p align="center">
-<img src="assets/project_status.png" width="680" height="280">
+<img src="assets/project_status.png" width="680" height="275">
 </p>
+
 
 ### <a name="conclusion">Conclusion</a>
 
 <p align="center">
 <img src="assets/conclusion.png" width="650" height="300">
 </p>
+
 
 ### <a name="ref">References</a>
 
