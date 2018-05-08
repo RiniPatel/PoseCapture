@@ -81,19 +81,19 @@ The Blender visualization is powered by a series of controllers called once ever
 Controllers are written in Visual Studio C#. One software thread running in background to continuously reads from WiFi UDP port of host PC, and event-driven controllers for each sensor node update the graphical movement of associated limb on screen at the rate of 10fps.
 
 <p align="center">
-<img src="assets/model_3d.png">
+<img src="assets/model_3d.png" >
 </p>
 
 ### <a name="status">Project Status</a>
 
 <p align="center">
-<img src="assets/project_status.png">
+<img src="assets/project_status.png" width="600" height="300">
 </p>
 
 ### <a name="conclusion">Conclusion</a>
 
 <p align="center">
-<img src="assets/conclusion.png">
+<img src="assets/conclusion.png" width="600" height="300">
 </p>
 
 ### <a name="ref">References</a>
