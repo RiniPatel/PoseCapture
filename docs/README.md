@@ -44,7 +44,7 @@ The main goal of the project is to get a full body capture of the person using
 
 The most definitive use of our project is in computer animation. Rather than manually moving the limbs of a character, the animator can build a model of the character, act out the desired motion physically, and apply the recorded motions directly to the limbs of the model. This animation could be used in film making, game development etc.
 <p align="center">
-<img src="assets/usecases.png" width="300" height="300">
+<img src="assets/usecases.png" width="350" height="300">
 </p>
 
 
@@ -63,7 +63,7 @@ Key hardware components for our project:
 - WiFi shields (ESP8266 WiFi modules)
 
 <p align="center">
-<img src="assets/hardware.png">
+<img src="assets/hardware.png" width="465" height="200">
 </p>
 
 #### <a name="model">Body Model</a>
@@ -71,11 +71,7 @@ Key hardware components for our project:
 We are using a hip rooted body model where all the movements of bones are rooted on a tree as shown in Figure 3. This defines the relative position of bones and helps in modelling body motion and movements correctly. For example, upper arm  is parent of lower arm thus a movement in upper arm would cause motion in lower arm as well. The same model is being used by Blender and Unity.
 
 <p align="center">
-<img src="assets/body_model.png">
-</p>
-
-<p align="center">
-<img src="assets/body_model1.png">
+<img src="assets/body_model.png"  width="425"> <img src="assets/body_model1.png" width="425">
 </p>
 
 #### <a name="example">Blender and Unity 3D Animation</a>
